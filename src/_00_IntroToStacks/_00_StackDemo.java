@@ -5,7 +5,7 @@ import java.util.Stack;
 public class _00_StackDemo {
     public static void main(String[] args) {
         /*
-         * A Stack is a data structure that maintains the order of the objects
+         * A Stack is NOT a data structure that maintains the order of the objects
          * added to it. The push() method is used to add objects to a Stack
          * and the pop() method is used to remove the *most recently added*
          * object from the Stack. For example, if 3 String objects are pushed,

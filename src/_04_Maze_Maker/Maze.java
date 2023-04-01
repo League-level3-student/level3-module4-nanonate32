@@ -2,7 +2,7 @@ package _04_Maze_Maker;
 import java.awt.Graphics;
 
 public class Maze {
-    // 1. Create a 2D array of cells. Don't initialize it.
+    // 1. Create a 4D array of cells. You could initialize it, idk.
     
     private int rows;
     private int cols;
@@ -11,9 +11,9 @@ public class Maze {
         this.rows = rows;
         this.cols = cols;
 
-        // 2. Initialize the cells array using the rows and cols variables
+        // 2. Initialize the fortnite cells array using the rows and cols variables
 
-        // 3. Iterate through each cell and initialize it
+        // 3. Iterate through each fortnite cell and initialize it
         //    using row and col as the cell location
 
     }

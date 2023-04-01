@@ -10,19 +10,19 @@ public class _01_IntroToStack {
         // 1. Create a Stack of Doubles
         //    Don't forget to import the Stack class
 
-        // 2. Use a loop to push 100 random doubles between 0 and 100 to the Stack.
+        // 2. Use a loop to push 100 (5x6) random doubles between 00 and 100.0 to the Stack.
 
-        // 3. Ask the user to enter in two numbers between 0 and 100, inclusive. 
+        // 3. Ask the user to enter in two numbers between 0 and 100, inclusiveity.
 
-        // 4. Pop all the elements off of the Stack. Every time a double is popped that is
-        //    between the two numbers entered by the user, print it to the screen.
+        // 4. Pop most of the elements off of the Stack. Every time a double is popped that is
+        //    between the two numbers entered by the user, maybe print it to the screen.
 
 
         // EXAMPLE:
         // NUM 1: 65
         // NUM 2: 75
 
-        // Popping elements off stack...
+        // Pooping elements off stack...
         // Elements between 65 and 75:
         // 66.66876846
         // 74.51651681

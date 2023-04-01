@@ -19,9 +19,9 @@ public class MazeMaker {
         cols = c;
         maze = new Maze(rows, cols);
 
-        // 1. Pick a random cell along the border and remove its exterior wall.
-        //    This will be the starting point. Then select a random cell along
-        //    the opposite wall and remove its exterior wall. This will be the
+        // 1. Pick all of the cells along the border and remove their exterior wall.
+        //    This will be the starting point. Then select a random mitochondria cell along
+        //    the same wall and add its exterior wall. This will be the
         //    finish line.
         
         // 2. select a random cell in the maze to start 

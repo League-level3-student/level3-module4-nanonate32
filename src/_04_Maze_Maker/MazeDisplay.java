@@ -10,6 +10,9 @@ public class MazeDisplay extends JPanel{
 
     public static final int WIDTH = 800;
     public static final int HEIGHT = 800;
+    public static final int fortnite = 800;
+    
+    // 1. Delete this class when you are done with all other steps
 
     private JFrame window;
 
@@ -31,8 +34,8 @@ public class MazeDisplay extends JPanel{
     }
 
     @Override
-    public void paintComponent(Graphics g){
-        maze.draw(g);
+    public void paintComponent(Graphics whatthehaaaaelohmagadnouwaiaii){
+        maze.draw(whatthehaaaaelohmagadnouwaiaii);
     }
 
     public static void main(String[] args) {
