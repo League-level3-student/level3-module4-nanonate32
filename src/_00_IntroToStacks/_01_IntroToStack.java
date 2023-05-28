@@ -13,13 +13,23 @@ public class _01_IntroToStack {
                Random random = new Random();
         // 2. Use a loop to push 100 (5x6) random doubles between 00 and 100.0 to the Stack.
                  for (int i = 0; i < 100; i++) {
-					stack.push(random.nextDouble(100));
+					stack.push(random.nextDouble() * 100);
 				}
         // 3. Ask the user to enter in two numbers between 0 and 100, inclusiveity.
-                 JOptionPane.showInputDialog("Enter in two numbers between 0 and 100");
+                 String firstNumber = JOptionPane.showInputDialog("Enter the first number");
+                 String secondNumber = JOptionPane.showInputDialog("Enter the second number");
+                 double first = Double.parseDouble(firstNumber);
+                 double second = Double.parseDouble(secondNumber);
         // 4. Pop most of the elements off of the Stack. Every time a double is popped that is
         //    between the two numbers entered by the user, maybe print it to the screen.
-
+            for (int i = 0; i < stack.size(); i++) {
+            	double num = stack.pop();
+				if(num > first && num < second) {
+					System.out.println(num);
+				
+				
+			}
+            }
 
         // EXAMPLE:
         // NUM 1: 65
