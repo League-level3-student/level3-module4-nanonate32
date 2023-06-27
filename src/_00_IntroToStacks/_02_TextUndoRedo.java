@@ -12,7 +12,7 @@ public class _02_TextUndoRedo implements KeyListener {
      JPanel panel = new JPanel();
      JLabel label = new JLabel(); 
      String word = "";	
-     Stack<String> delete = new Stack<String>();
+     Stack<Character> delete = new Stack<Character>();
 		
 	public static void main(String[] args) {
 		
@@ -47,8 +47,8 @@ public class _02_TextUndoRedo implements KeyListener {
 	
 	@Override
 	public void keyPressed(KeyEvent e) {
-		if(e.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
-			delete.add(String.valueOf(word.length()-1));
+		if(e.getKeyCode() == KeyEvent.VK_BACK_SPACE && word.length() > 1) {
+			delete.add(word.charAt(word.length()-1));
 			  word = word.substring(0, word.length()-1);
 			   label.setText(word);
 			   System.out.println("\""+word+"\"");
@@ -56,10 +56,12 @@ public class _02_TextUndoRedo implements KeyListener {
 			   return;
 			  
 		   }
-		if(e.getKeyCode() == KeyEvent.VK_Z) {
+		
+		if(e.getKeyCode() == KeyEvent.VK_0 && !delete.isEmpty()) {
 			
-			label.setText(word + " " +  delete.pop());
+			label.setText(word + delete.pop());
 		}
+		
 		else {
 			char c = e.getKeyChar();
 
