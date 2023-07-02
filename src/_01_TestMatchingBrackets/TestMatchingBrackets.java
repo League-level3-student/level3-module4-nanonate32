@@ -11,21 +11,28 @@ public class TestMatchingBrackets {
 	//count the number of opening brackets 
 	//check if counts are the same
     public static boolean doBracketsMatch(String b) {
-    	int closeCount = 0;
+   	int closeCount = 0;
     	int openCount = 0;
-            Stack<String> brackets = new Stack<String>();
-            brackets.add(b);
-            if(brackets.contains(b)) {
-            	return true;
-            }
+//    
+           Stack<Character> brackets = new Stack<Character>();
+           
+            
             for(int i = 0; i < b.length(); i++) {
-            	if(b.charAt(i) == '[') {
+            	brackets.add(b.charAt(i));
+            	if(b.charAt(i) == '{') {
             		openCount++;
             	}
-                if(b.charAt(i) == ']') {
+                if(b.charAt(i) == '}') {
                 	closeCount++;
                 }
+                if(closeCount > openCount) {
+                	return false;
+                }
             }
+            if(openCount == closeCount) {
+            	return true;
+            }
+    	
         return false;
     }
 }

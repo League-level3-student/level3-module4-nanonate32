@@ -69,6 +69,9 @@ public class _01_IntroToQueue {
                   for(int i = 0; i<5; i++) {
                       
                	   doubles.add(stack.pop());
+               	   if(doubles.size() == 0) {
+               		   break;
+               	   }
                   }
         // 7. Loop until there are no more elements in either the Stack or Queue
         //    and all the elements are printed
