@@ -57,7 +57,7 @@ public class _01_IntroToQueue {
         // 5. Print and remove a random number of elements, from 1 to 5 elements,
         //    from the front of the Queue. Example:
         //    "removing 3 elements from Queue: 25 57 2"
-               int num = random.nextInt(1, 6);
+               int num = random.nextInt(5) + 1;
                String s = "";
                   for(int i = 0; i<num; i++) {
                 	s+= " " +  doubles.remove() ;
